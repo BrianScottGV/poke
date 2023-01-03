@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDeck</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="styles.css">           
+</head>
+<body>
+    <header class="navbar__header">
+        <form action="" onsubmit="searchPokemon(event)">
+            <img src="images/logo.png" alt="logo" class="navbar_img">
+                <input type="text" name="search" id="navbar_search" placeholder="Search..." autocomplete="off" required>
+                <button type="submit" title="buscar" class="navbar__btn">
+                <i class="fa fa-search navbar__i"></i>
+                </button>
+            
+        </form>
+    </header>
+
+
+    <section class="cards">
+        <article class="cards__pokemon" id="listaPokemon">
+            <div class="cards__div">
+                <img src="images/dft.png" alt="pokemon for default" class="cards__images">
+                <h2 class="card__name">Pokemon</h2>
+                <p class="card__id">#000</p>
+            </div>
+        </article>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
